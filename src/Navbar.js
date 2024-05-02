@@ -8,6 +8,10 @@ const Navbar = () => {
           {" "}
           <input type="text" placeholder="Search for Products, services and Trainings" />
         </nav>
+        <span>Products</span>
+        <span>Services</span>
+        <span>Trainings</span>
+        <span>Contact Us</span>
       </nav>
     </nav>
   );
