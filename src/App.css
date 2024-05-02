@@ -28,11 +28,61 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Nav Bar */
+
+/* 
+
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 24px 64px;
+gap: 125px;
+
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+border-bottom: 1px solid #F1F1F1; */
+
+
+.site-logo{
+  width: 32px;
+  height: 28px;
+  margin-top: 20px;
+  margin-right: 850px;
+}
+
+.site-name{
+  width: 118px;
+  height: 28px;
+  gap: 8px;
+  margin-left: 100px;
+  margin-top: 0px;  
+  color:black ;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  line-height: 19.36px;
+}
+
+.navbar{
+  box-sizing: border-box;
+  width: 1440px;
+  height: 100px;
+  border: 0px, 0px, 1px, 0px;
+  justify-content: space-between;
+  padding: 24px, 64px, 24px, 64px;
+  color: #FFFFFF;
+  border-color: 1px #F1F1F1;
+} */
+
+.dashboard{
+  width: 1023px;
+  height: 52px;
+  gap: 32px;
 }
