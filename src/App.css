@@ -94,4 +94,14 @@ margin-right: 740px;
 border-radius: 12px;
 padding: 16px, 12px, 16px, 12px;
 gap:8px;
+font-weight: 400;
+size: 14px;
+line-height: 16.94px;
+}
+
+.eyes{
+  opacity: 40%;
+  width: 1440px;
+  height: 144px;
+  top: 100px;
 }
