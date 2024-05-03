@@ -139,3 +139,21 @@ left: 150px;
   position: relative;
   left: 240px;
 }
+
+.business-card{
+  border: 3px #F5F5F5;
+  width: 1312px;
+  position: relative;
+  top: 188px;
+  left: 64px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.business-logo{
+  width: 120px;
+  height: 105px;
+  position: relative;
+  top: 40px;
+  left: -504px;
+}
