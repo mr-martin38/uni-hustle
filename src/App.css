@@ -253,3 +253,31 @@ left: 150px;
   max-width: 380px;
   right: -515px;
 }
+
+.shoe{
+  width: 124px;
+  height: 130px;
+  margin-left: 190px;
+}
+
+.product-card{
+  width: 272px;
+  height: 320px;
+  border-radius: 10px;
+  color: #F6F6F6;
+}
+
+.product-frame{
+  width: 1312px;
+  height: 664px;
+  position: relative;
+  top: 30px;
+  left: 64px;
+  border-radius: 10px;
+  border: 3px #F5F5F5;
+  color: #FFFFFF;
+}
+
+body{
+  color: #0C0C0C;
+}
