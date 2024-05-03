@@ -57,10 +57,12 @@ border-bottom: 1px solid #F1F1F1; */
   margin-top: 20px;
   margin-right: 1250px;
   margin-bottom: -25px;
+  position: relative;
+  left: 40px;
 }
 
 .site-name{
-  width: 118px;
+  width: 1018px;
   height: 28px;
   gap: 8px;
   margin-left: 100px;
@@ -69,6 +71,8 @@ border-bottom: 1px solid #F1F1F1; */
   font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
   line-height: 19.36px;
+  position: relative;
+  left: -490px;
 }
 
 .navbar{
@@ -78,9 +82,9 @@ border-bottom: 1px solid #F1F1F1; */
   border: 0px, 0px, 1px, 0px;
   justify-content: space-between;
   padding: 24px, 64px, 24px, 64px;
-  color: #FFFFFF;
+  position: relative;
   border-color: 1px #F1F1F1;
-} */
+} 
 
 .dashboard{
   width: 1023px;
@@ -97,6 +101,8 @@ gap:8px;
 font-weight: 400;
 size: 14px;
 line-height: 16.94px;
+position: relative;
+left: 150px;
 }
 
 .eyes{
@@ -104,4 +110,32 @@ line-height: 16.94px;
   width: 1440px;
   height: 144px;
   top: 100px;
+}
+
+.info{
+  width: 60px;
+  height: 17px;
+  gap: 36px;
+  padding-left: 140px;
+  position: relative;
+  left: 170px;
+  top: -23px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.icons{
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 220px;
+}
+
+.pfp{
+  width: 40px;
+  height: 40px;
+  border: 2px #8C0303;
+  border-radius: 20px;
+  position: relative;
+  left: 240px;
 }

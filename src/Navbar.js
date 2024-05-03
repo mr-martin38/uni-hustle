@@ -7,10 +7,13 @@ const Navbar = () => {
         <nav className="search-bar">
           <input type="text" placeholder="Search for Products, services and Trainings" />
         </nav>
-        <span>Products</span>
-        <span>Services</span>
-        <span>Trainings</span>
-        <span>Contact Us</span>
+        <span className="info">Products</span>
+        <span className="info">Services</span>
+        <span className="info">Trainings</span>
+        <span className="info">Contact Us</span>
+        <img className="icons" src="/images/message.jpg" />
+        <img className="icons" src="/images/cart.jpg" />
+        <img className="pfp" src="/images/pfp.jpeg" />
       </nav>
       <img className="eyes" src="/images/eyes.png" />
     </nav>
