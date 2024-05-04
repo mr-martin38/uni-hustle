@@ -116,11 +116,11 @@ left: 150px;
 .info{
   width: 60px;
   height: 17px;
-  gap: 36px;
+  gap: 20px;
   padding-left: 140px;
   position: relative;
   left: 170px;
-  top: -23px;
+  top: -48px;
   font-weight: 400;
   font-size: 14px;
 }
@@ -257,14 +257,16 @@ left: 150px;
 .shoe{
   width: 124px;
   height: 130px;
-  margin-left: 190px;
+  margin-left: 10px;
 }
 
 .product-card{
   width: 272px;
   height: 320px;
   border-radius: 10px;
-  color: #F6F6F6;
+  background-color: #F6F6F6;
+  position: absolute;
+  left: 90px;
 }
 
 .product-frame{
@@ -278,6 +280,46 @@ left: 150px;
   color: #FFFFFF;
 }
 
-body{
+.store-name{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.94px;
+  color: #8C0303;
+  width: 150px;
+  height: 17px;
+}
+
+.shoe-desc{
+  font-weight: 700;
+  width: 100px;
+  height: 38px;
+  font-size: 16px;
+  margin-left: 16px;
+  line-height: 19.36px;
   color: #0C0C0C;
 }
+
+.shoe-info{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.94px;
+  color: #929292;
+  width: 208px;
+  margin-left: 16px;
+}
+
+.star{
+  width: 18px;
+  height: 17px;
+}
+
+.price{
+  width: 70px;
+  height: 19px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0C0C0C;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
