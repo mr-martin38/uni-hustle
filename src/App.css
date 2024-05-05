@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   width: 100vw;
-
 }
 
 .App-logo {
@@ -30,30 +29,129 @@
   color: #61dafb;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 24px 64px;
+}
 
-/* Nav Bar */
+.header > div {
+  display: flex;
+  align-items: center;
+}
 
-/* 
+.header > div:nth-child(1),
+.header > div:nth-child(2) {
+  gap: 0.5rem;
+}
 
+.header > div:nth-child(1) > img {
+  width: 32px;
+  height: 28px;
+}
 
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 24px 64px;
-gap: 125px;
+.header > div:nth-child(1) > h4 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: right;
+  color: #000000;
+}
 
-position: absolute;
-width: 1440px;
-height: 100px;
-left: 0px;
-top: 0px;
+.header > div:nth-child(2) {
+  border: 2px solid #ececec;
+  padding: 16px 12px;
+  gap: 8px;
+  border-radius: 12px;
+  min-width: 480px;
+}
 
-background: #FFFFFF;
-border-bottom: 1px solid #F1F1F1; */
+.header > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: Inter;
+  font-size: 13.61px;
+  font-weight: 500;
+  line-height: 16.47px;
+  text-align: left;
+  color: #000000;
+  cursor: pointer;
+}
 
+.header > div:nth-child(2) > div:nth-child(2) {
+  flex: 1;
+}
 
-.site-logo{
+.header > div:nth-child(2) > div:nth-child(2) > input {
+  width: 100%;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  color: #000000;
+  border: none;
+  outline: none;
+}
+
+.header > div:nth-child(2) > div:nth-child(2) > input::placeholder {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  color: #a0a0a0;
+}
+
+.header > div:nth-child(3) {
+  gap: 2rem;
+}
+
+.header > div:nth-child(3) > a {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  color: #545454;
+  text-decoration: none;
+}
+
+.header > div:nth-child(4) {
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.header > div:nth-child(4) > div {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.header > div:nth-child(4) > div > span {
+  width: 27px;
+  height: 27px;
+  padding: 4px 8px 4px 8px;
+  gap: 8px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header > div:nth-child(4) > div > img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #8c0303;
+  border-radius: 50%;
+}
+
+.site-logo {
   width: 32px;
   height: 28px;
   margin-top: 20px;
@@ -63,21 +161,21 @@ border-bottom: 1px solid #F1F1F1; */
   left: 40px;
 }
 
-.site-name{
+.site-name {
   width: 1018px;
   height: 28px;
   gap: 8px;
   margin-left: 100px;
-  margin-top: 0px;  
-  color:black ;
-  font-family: 'Times New Roman', Times, serif;
+  margin-top: 0px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   line-height: 19.36px;
   position: relative;
   left: -490px;
 }
 
-.navbar{
+.navbar {
   box-sizing: border-box;
   width: 1440px;
   height: 100px;
@@ -85,31 +183,29 @@ border-bottom: 1px solid #F1F1F1; */
   justify-content: space-between;
   padding: 24px, 64px, 24px, 64px;
   position: relative;
-  border-color: 1px #F1F1F1;
-} 
+  border-color: 1px #f1f1f1;
+}
 
-.dashboard{
+.dashboard {
   width: 1023px;
   height: 52px;
   gap: 32px;
 }
 
-.search-bar{
-margin-top: -50px;
-margin-right: 740px;
-border-radius: 12px;
-padding: 16px, 12px, 16px, 12px;
-gap:8px;
-font-weight: 400;
-size: 14px;
-line-height: 16.94px;
-position: relative;
-left: 150px;
+.search-bar {
+  margin-top: -50px;
+  margin-right: 740px;
+  border-radius: 12px;
+  padding: 16px, 12px, 16px, 12px;
+  gap: 8px;
+  font-weight: 400;
+  size: 14px;
+  line-height: 16.94px;
+  position: relative;
+  left: 150px;
 }
 
-
-
-.info{
+.info {
   width: 60px;
   height: 17px;
   gap: 20px;
@@ -121,34 +217,32 @@ left: 150px;
   font-size: 14px;
 }
 
-.icons{
+.icons {
   width: 24px;
   height: 24px;
   position: relative;
   left: 220px;
 }
 
-.pfp{
+.pfp {
   width: 40px;
   height: 40px;
-  border: 2px #8C0303;
+  border: 2px #8c0303;
   border-radius: 20px;
   position: relative;
   left: 240px;
 }
 
-
-
-.business-card{
-margin-bottom: 20rem;
+.business-card {
+  margin-bottom: 20rem;
   position: relative;
   border: 2px solid red;
   width: 100vw;
 }
 
-.business-card-inner{
+.business-card-inner {
   width: 1312px;
-  border: 3px #F5F5F5;
+  border: 3px #f5f5f5;
   position: absolute;
   top: 100px;
   bottom: 0px;
@@ -157,41 +251,41 @@ margin-bottom: 20rem;
   margin: 0 auto;
   border-radius: 10px;
   height: 200px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 5px solid green;
   width: 90%;
   display: flex;
   align-items: center;
 }
 
-.business-card-inner > div:nth-child(1){
+.business-card-inner > div:nth-child(1) {
   width: 120px;
-  height: 105px
+  height: 105px;
 }
 
-.business-card-inner > div:nth-child(2){
+.business-card-inner > div:nth-child(2) {
   flex: 1;
   border: 2px solid green;
 }
 
-.business-card-inner > div:nth-child(3){
+.business-card-inner > div:nth-child(3) {
   flex: 2;
 }
 
-.business-card-inner > div:nth-child(2)> div, .business-card-inner > div:nth-child(3)> div{
+.business-card-inner > div:nth-child(2) > div,
+.business-card-inner > div:nth-child(3) > div {
   border: 2px solid red;
-text-align: left;
+  text-align: left;
 }
 
-.business-card-inner > div:nth-child(2)> div > h2{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.business-card-inner > div:nth-child(2) > div > h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;
   line-height: 26px;
-  color: #0C0C0C;
+  color: #0c0c0c;
 }
 
-
-.eyes{
+.eyes {
   opacity: 40%;
   height: 144px;
   top: 0px;
@@ -199,130 +293,128 @@ text-align: left;
   z-index: -1;
   width: 100%;
   left: 0;
-  right: 0
+  right: 0;
 }
 
-
-.business-logo{
+.business-logo {
   width: 100%;
   height: 100%;
 }
 
-.business-name{
-
+.business-name {
 }
 
-.desription{
+.desription {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.36px;
-  color: #8C0303;
+  color: #8c0303;
 }
 
-.order-status{
+.order-status {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.36px;
-  color: #0C0C0C;
+  color: #0c0c0c;
 }
 
-.order-per{
+.order-per {
   font-size: 16px;
   font-weight: 400;
   line-height: 19.36px;
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 
-.verified{
-  background-color: #706DEA;
+.verified {
+  background-color: #706dea;
   width: 60px;
   height: 40px;
   gap: 10px;
 
   padding-top: 20px;
   border-radius: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: smaller;
 }
 
-.business-type{
+.business-type {
   line-height: 19.36px;
-  color: #0C0C0C;
+  color: #0c0c0c;
   font-weight: 400;
 }
 
-.uni{
+.uni {
   font-weight: 400;
   size: 16px;
   line-height: 19.36px;
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 
-.about{
+.about {
   size: 16px;
   line-height: 19.36px;
   font-weight: 400;
 }
 
-.summary{
+.summary {
   font-weight: 400;
   size: 16px;
   line-height: 19.36px;
-  color: #ABABAB;
+  color: #ababab;
   max-width: 380px;
   right: -515px;
 }
 
-.shoe{
+.shoe {
   width: 124px;
   height: 130px;
   margin-left: 10px;
 }
 
-.product-card{
-width: 272px;
+.product-card {
+  width: 272px;
   flex-basis: 272px;
   border-radius: 10px;
-  background-color: #F6F6F6;
-border: 2px solid red;
+  background-color: #f6f6f6;
+  border: 2px solid red;
 }
 
-.product-frame{
+.product-frame {
   width: 1312px;
   height: 664px;
   position: relative;
   top: 30px;
   left: 64px;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 2px solid red;
   display: flex;
   align-items: flex-start;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem 4rem;
 }
 
-.store-name{
+.store-name {
   font-weight: 400;
   font-size: 14px;
   line-height: 16.94px;
-  color: #8C0303;
+  color: #8c0303;
   width: 150px;
   height: 17px;
 }
 
-.shoe-desc{
+.shoe-desc {
   font-weight: 700;
   width: 100px;
   height: 38px;
   font-size: 16px;
   margin-left: 16px;
   line-height: 19.36px;
-  color: #0C0C0C;
+  color: #0c0c0c;
 }
 
-.shoe-info{
+.shoe-info {
   font-weight: 400;
   font-size: 14px;
   line-height: 16.94px;
@@ -331,19 +423,18 @@ flex-wrap: wrap;
   margin-left: 16px;
 }
 
-.star{
+.star {
   width: 18px;
   height: 17px;
   margin-left: -200px;
 }
 
-.price{
+.price {
   width: 70px;
   height: 19px;
   font-weight: 700;
   font-size: 16px;
-  color: #0C0C0C;
+  color: #0c0c0c;
   margin-top: -3px;
   margin-left: 10px;
 }
-
