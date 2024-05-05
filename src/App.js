@@ -8,12 +8,10 @@ import ProductPage from "./Container/ProductPage";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/:id" element={<ProductPage />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/:id" element={<ProductPage />} />
+    </Routes>
   );
 }
 

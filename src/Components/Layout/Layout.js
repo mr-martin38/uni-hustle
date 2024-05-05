@@ -2,8 +2,8 @@ import Navbar from "../../Container/Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <section>
-      <div>
+    <section className="App">
+      <div className="header-container">
         <Navbar />
       </div>
       <div>{children}</div>

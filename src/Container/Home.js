@@ -1,4 +1,4 @@
-import Business from "../Business";
+import Business from "../Container/Business";
 import Layout from "../Components/Layout/Layout";
 import Card from "../Card";
 
