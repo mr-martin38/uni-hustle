@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100vw;
+
 }
 
 .App-logo {
@@ -105,13 +107,7 @@ position: relative;
 left: 150px;
 }
 
-.eyes{
-  opacity: 40%;
-  width: 1440px;
-  max-width: 1440px;
-  height: 144px;
-  top: 100px;
-}
+
 
 .info{
   width: 60px;
@@ -141,33 +137,79 @@ left: 150px;
   left: 240px;
 }
 
+
+
 .business-card{
-  border: 3px #F5F5F5;
-  width: 1312px;
+margin-bottom: 20rem;
   position: relative;
+  border: 2px solid red;
+  width: 100vw;
+}
+
+.business-card-inner{
+  width: 1312px;
+  border: 3px #F5F5F5;
+  position: absolute;
+  top: 100px;
   bottom: 0px;
-  left: 64px;
+  left: 0px;
+  right: 0;
+  margin: 0 auto;
   border-radius: 10px;
   height: 200px;
   background-color: #FFFFFF;
+  border: 5px solid green;
+  width: 90%;
+  display: flex;
+  align-items: center;
 }
 
-.business-logo{
+.business-card-inner > div:nth-child(1){
   width: 120px;
-  height: 105px;
-  position: relative;
-  top: 40px;
-  left: -540px;
+  height: 105px
 }
 
-.business-name{
+.business-card-inner > div:nth-child(2){
+  flex: 1;
+  border: 2px solid green;
+}
+
+.business-card-inner > div:nth-child(3){
+  flex: 2;
+}
+
+.business-card-inner > div:nth-child(2)> div, .business-card-inner > div:nth-child(3)> div{
+  border: 2px solid red;
+text-align: left;
+}
+
+.business-card-inner > div:nth-child(2)> div > h2{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 700;
   line-height: 26px;
   color: #0C0C0C;
-  position: relative;
-  right: 360px;
-  bottom: 90px;
+}
+
+
+.eyes{
+  opacity: 40%;
+  height: 144px;
+  top: 0px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  left: 0;
+  right: 0
+}
+
+
+.business-logo{
+  width: 100%;
+  height: 100%;
+}
+
+.business-name{
+
 }
 
 .desription{
@@ -175,9 +217,6 @@ left: 150px;
   font-size: 16px;
   line-height: 19.36px;
   color: #8C0303;
-  position: relative;
-  right: 403px;
-  bottom: 113px;
 }
 
 .order-status{
@@ -185,9 +224,6 @@ left: 150px;
   font-size: 16px;
   line-height: 19.36px;
   color: #0C0C0C;
-  position: relative;
-  right: 400px;
-  bottom: 150px;
 }
 
 .order-per{
@@ -195,9 +231,6 @@ left: 150px;
   font-weight: 400;
   line-height: 19.36px;
   color: #A8A8A8;
-  position: relative;
-  right: 385px;
-  bottom: 160px;
 }
 
 .verified{
@@ -205,29 +238,20 @@ left: 150px;
   width: 60px;
   height: 40px;
   gap: 10px;
-  position: relative;
+
   padding-top: 20px;
   border-radius: 40px;
-  right: -110px;
-  bottom: 300px;
   color: #FFFFFF;
   font-size: smaller;
 }
 
 .business-type{
-  position: relative;
-  bottom: 355px;
-  right: 70px;
-  font-size: 16px;
   line-height: 19.36px;
   color: #0C0C0C;
   font-weight: 400;
 }
 
 .uni{
-  position: relative;
-  bottom: 369px;
-  right: 65px;
   font-weight: 400;
   size: 16px;
   line-height: 19.36px;
@@ -235,17 +259,12 @@ left: 150px;
 }
 
 .about{
-  position: relative;
-  bottom: 373px;
-  right: 68px;
   size: 16px;
   line-height: 19.36px;
   font-weight: 400;
 }
 
 .summary{
-  position: relative;
-  bottom: 390px;
   font-weight: 400;
   size: 16px;
   line-height: 19.36px;
@@ -261,12 +280,11 @@ left: 150px;
 }
 
 .product-card{
-  width: 272px;
-  height: 320px;
+width: 272px;
+  flex-basis: 272px;
   border-radius: 10px;
   background-color: #F6F6F6;
-  position: absolute;
-  left: 90px;
+border: 2px solid red;
 }
 
 .product-frame{
@@ -276,8 +294,13 @@ left: 150px;
   top: 30px;
   left: 64px;
   border-radius: 10px;
-  border: 3px #F5F5F5;
   color: #FFFFFF;
+  border: 2px solid red;
+  display: flex;
+  align-items: flex-start;
+flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 4rem;
 }
 
 .store-name{
@@ -311,6 +334,7 @@ left: 150px;
 .star{
   width: 18px;
   height: 17px;
+  margin-left: -200px;
 }
 
 .price{
@@ -319,7 +343,7 @@ left: 150px;
   font-weight: 700;
   font-size: 16px;
   color: #0C0C0C;
-  margin-top: 5px;
+  margin-top: -3px;
   margin-left: 10px;
 }
 

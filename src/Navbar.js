@@ -15,7 +15,7 @@ const Navbar = () => {
         <img className="icons" src="/images/cart.jpg" />
         <img className="pfp" src="/images/pfp.jpeg" />
       </nav>
-      <img className="eyes" src="/images/eyes.png" />
+      {/* <img className="eyes" src="/images/eyes.png" /> */}
     </nav>
   );
 };
