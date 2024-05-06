@@ -30,18 +30,23 @@ const ProductPage = () => {
         <button className="submit" type="submit" value="Add to Cart">
           Add to Cart
         </button>
+        <button className="message-business" type="">
+          Message Business
+        </button>
       </div>
 
       <div className="sold">
         <h2 className="trader">SOLD BY</h2>
         <p className="trader-desc">Sarah's Closet Store</p>
-        <ul>
-          <li>80% Store rating</li>
-          <li>95% order completion rate</li>
-          <li>48 products</li>
-          <li>All Products verfied by UniHustle</li>
-        </ul>
-        <a href="#">Go to Business</a>
+        <div className="list">
+          <ul>
+            <li>80% Store rating</li>
+            <li>95% order completion rate</li>
+            <li>48 products</li>
+            <li>All Products verfied by UniHustle</li>
+          </ul>
+          <a href="#">Go to Business</a>
+        </div>
       </div>
     </Layout>
   );
