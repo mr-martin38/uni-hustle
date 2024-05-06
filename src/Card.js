@@ -89,7 +89,8 @@ const Card = () => {
               className="product-card"
               key={i}
               onClick={() => {
-                navigate(`/${product.id}`);
+                /*                 navigate(`/${product.id}`);
+                 */
               }}>
               <img className="shoe" src={product.image} />
               <p className="store-name">{product.store}</p>
