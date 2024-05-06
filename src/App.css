@@ -530,3 +530,23 @@ p {
   background-color: #0c0c0c;
   margin-top: 50px;
 }
+
+.sold{
+  margin-left: 1056px;
+  margin-right: 46px;
+  margin-top: -130px;
+}
+
+.trader{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #a8a8a8;
+}
+
+.trader-desc{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #8c0303;
+}
