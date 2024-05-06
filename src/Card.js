@@ -90,13 +90,17 @@ const Card = () => {
               key={i}
               onClick={() => {
                 navigate(`/${product.id}`);
-              }}
-            >
+              }}>
               <img className="shoe" src={product.image} />
               <p className="store-name">{product.store}</p>
               <h3 className="shoe-desc">{product.title}</h3>
               <p className="shoe-info">{product.description}</p>
               <img src="/images/star.png" className="star" />
+              <img src="/images/star.png" className="star" />
+              <img src="/images/star.png" className="star" />
+              <img src="/images/star.png" className="star" />
+              <img src="/images/star.png" className="star" />
+
               <p className="price">${product.price}</p>
             </div>
           );

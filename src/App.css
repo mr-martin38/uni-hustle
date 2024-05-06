@@ -403,6 +403,7 @@ p {
   flex-basis: 272px;
   border-radius: 10px;
   background-color: #f6f6f6;
+  
 }
 
 .product-frame {
@@ -436,10 +437,10 @@ p {
 
 .shoe-desc {
   font-weight: 700;
-  width: 100px;
+  width: 99px;
   height: 38px;
   font-size: 16px;
-  margin-left: 16px;
+  margin-left: 12px;
   line-height: 19.36px;
   color: #0c0c0c;
 }
@@ -449,14 +450,16 @@ p {
   font-size: 14px;
   line-height: 16.94px;
   color: #929292;
-  width: 208px;
-  margin-left: 16px;
+  width: 220px;
+  margin-left: 9px;
 }
 
 .star {
   width: 18px;
   height: 17px;
-  margin-left: -200px;
+  margin-left: 2px;
+  position: relative;
+  left: -70px;
 }
 
 .price {
