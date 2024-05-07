@@ -1,3 +1,4 @@
+import Card from "../Card";
 import Layout from "../Components/Layout/Layout";
 
 const ProductPage = () => {
@@ -48,6 +49,7 @@ const ProductPage = () => {
           <a href="#">Go to Business</a>
         </div>
       </div>
+      <Card isProductPage />
     </Layout>
   );
 };

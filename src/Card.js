@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const Card = () => {
+const Card = ({ isProductPage }) => {
   // Router
   const navigate = useNavigate();
 
@@ -82,7 +82,8 @@ const Card = () => {
 
   return (
     <div className="product-frame">
-      <div className="product-frame-inner">
+      {isProductPage && <h4>Closet</h4>}
+      <div className={isProductPage ? "product-frame-inner-product" : "product-frame-inner"}>
         {products?.map((product, i) => {
           return (
             <div

@@ -408,6 +408,10 @@ p {
   
 }
 
+.product-frame-inner-product > .product-card{
+  flex-shrink: 0;
+}
+
 .product-frame {
   width: 100%;
   padding: 10rem 4rem;
@@ -426,6 +430,21 @@ p {
   color: #ffffff;
   border: 3px solid #f5f5f5;
   padding: 2rem 1rem;
+}
+
+.product-frame-inner-product{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 3px solid #f5f5f5;
+  padding: 2rem 1rem; 
+  overflow-x: scroll;
 }
 
 .store-name {
@@ -568,4 +587,5 @@ p {
   gap: 8px;
   height: 53px;
   justify-content: space-between;
+  
 }
