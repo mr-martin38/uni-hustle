@@ -1,88 +1,26 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import AcceptedModal from "./Components/Modals/AcceptedModal";
+import ProductModalBody from "./Container/ProductModalBody";
 
-const Card = ({ isProductPage }) => {
+const Card = ({ isProductPage, products }) => {
   // Router
   const navigate = useNavigate();
 
-  // Utils
-  const products = [
-    {
-      title: "Nike Air max 270 Series",
-      store: "Sarah Closet Store",
-      description: "The new nike air max 270 series",
-      rating: 4.5,
-      price: 400,
-      image: "/images/shoe.png",
-      id: 1,
-    },
-    {
-      title: "Nike Air max 270 Series",
-      store: "Sarah Closet Store",
-      description: "The new nike air max 270 series",
-      rating: 4.5,
-      price: 400,
-      image: "/images/shoe.png",
-      id: 2,
-    },
-    {
-      title: "Nike Air max 270 Series",
-      store: "Sarah Closet Store",
-      description: "The new nike air max 270 series",
-      rating: 4.5,
-      price: 400,
-      image: "/images/shoe.png",
-      id: 3,
-    },
-    {
-      title: "Nike Air max 270 Series",
-      store: "Sarah Closet Store",
-      description: "The new nike air max 270 series",
-      rating: 4.5,
-      price: 400,
-      image: "/images/shoe.png",
-      id: 4,
-    },
-    {
-      title: "Nike Air max 270 Series",
-      store: "Sarah Closet Store",
-      description: "The new nike air max 270 series",
-      rating: 4.5,
-      price: 400,
-      image: "/images/shoe.png",
-      id: 5,
-    },
-    {
-      title: "Nike Air max 270 Series",
-      store: "Sarah Closet Store",
-      description: "The new nike air max 270 series",
-      rating: 4.5,
-      price: 400,
-      image: "/images/shoe.png",
-      id: 5,
-    },
-    {
-      title: "Nike Air max 270 Series",
-      store: "Sarah Closet Store",
-      description: "The new nike air max 270 series",
-      rating: 4.5,
-      price: 400,
-      image: "/images/shoe.png",
-      id: 6,
-    },
-    {
-      title: "Nike Air max 270 Series",
-      store: "Sarah Closet Store",
-      description: "The new nike air max 270 series",
-      rating: 4.5,
-      price: 400,
-      image: "/images/shoe.png",
-      id: 7,
-    },
-  ];
+  //   States
+  const [displayProductModal, setDisplyProductModal] = useState(false);
 
   return (
     <div className="product-frame">
-      {isProductPage && <h4>Closet</h4>}
+      {displayProductModal && (
+        <AcceptedModal
+          onClick={() => {
+            setDisplyProductModal(false);
+          }}
+          body={<ProductModalBody />}
+        />
+      )}
+      {isProductPage && <h4 className="more-from">More from Sarah's Closet Store</h4>}
       <div className={isProductPage ? "product-frame-inner-product" : "product-frame-inner"}>
         {products?.map((product, i) => {
           return (
@@ -90,7 +28,8 @@ const Card = ({ isProductPage }) => {
               className="product-card"
               key={i}
               onClick={() => {
-                navigate(`/${product.id}`);
+                // navigate(`/${product.id}`);
+                setDisplyProductModal(true);
               }}>
               <img className="shoe" src={product.image} />
               <p className="store-name">{product.store}</p>

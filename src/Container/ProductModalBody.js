@@ -1,15 +1,14 @@
 import Card from "../Card";
-import Layout from "../Components/Layout/Layout";
 import { products } from "../Utlities/products";
 
-const ProductPage = () => {
+const ProductModalBody = () => {
   return (
-    <Layout>
+    <div>
       <p className="product-path">
         Home {">"} Sarah's Closet Store {">"} Sneakers{" "}
       </p>
       <div className="product-shoe">
-        <img className="product-shoe" src="/images/shoe2.png" />
+        <img className="product-shoe" src="/images/shoe.png" />
       </div>
       <div className="product-details">
         <h1>Nike Air Max 270 Series</h1>
@@ -53,8 +52,8 @@ const ProductPage = () => {
         </div>
       </div>
       <Card isProductPage products={products} />
-    </Layout>
+    </div>
   );
 };
 
-export default ProductPage;
+export default ProductModalBody;
