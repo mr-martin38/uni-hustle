@@ -40,7 +40,7 @@ const ProductModalBody = () => {
 
       <div className="sold">
         <h2 className="trader">SOLD BY</h2>
-        <p className="trader-desc">Sarah's Closet Store</p>
+        <p className="trader-desc">Other Products From This Business</p>
         <div className="list">
           <ul>
             <li>80% Store rating</li>
