@@ -25,7 +25,7 @@ const Business = () => {
           <div>
             <h3 className="about">About Business</h3>
             <p className="summary">
-              I sell all types of clothes ranging from tees to cargos and others at very affordable prices with high
+              I sell all types of clothes ranging from tees to cargos and others at very affordable prices, with high
               quality
             </p>
           </div>
