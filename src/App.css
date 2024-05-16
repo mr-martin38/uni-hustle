@@ -612,3 +612,36 @@ p {
 
   }
 } */
+
+
+/* Tablets */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  
+}
+
+
+/* Phne */
+@media screen and (max-width: 767px) {
+  body{
+    border: 3px solid red;
+  } 
+
+  
+.business-section-inner {
+  width: 95%;
+  margin: 0 auto;
+  top: 68px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background: #ffffff;
+  border: 3px solid #f5f5f5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 34px 40px;
+ 
+}
+}
