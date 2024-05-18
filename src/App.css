@@ -149,6 +149,10 @@ p {
   margin-left: auto;
 }
 
+.header > div:nth-child(5){
+  display: none;
+}
+
 .header > div:nth-child(4) > div {
   display: flex;
   align-items: center;
@@ -643,5 +647,28 @@ p {
   right: 0;
   padding: 34px 40px;
  
+}
+ 
+.header > div:nth-child(2), .header > div:nth-child(3), .header > div:nth-child(4) {
+  display: none;
+border: 3px solid green;
+
+}
+
+.header > div:nth-child(5){
+margin-left: auto;
+display: block;
+}
+
+.business-logo{
+margin-left: 0px;
+}
+
+.desription{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #8c0303;
+  margin-left: 500px;
 }
 }
