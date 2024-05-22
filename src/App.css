@@ -679,6 +679,7 @@ width: 300px;
   padding: 10rem 4rem; 
   background: #f5f5f566;
   border: 5px solid yellow;
+  display: inline;
 }
 
 .product-card {
@@ -687,7 +688,6 @@ width: 300px;
   border-radius: 10px;
   background-color: #f6f6f6;
   border: 5px solid blue;
-
 }
 
 }
