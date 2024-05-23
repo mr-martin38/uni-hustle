@@ -709,4 +709,12 @@ margin-left: 500px;
   margin-top: 300px;
 }
 
+.product-shoe{
+  width: 604px;
+  height: 536px;
+  margin-top: 42px;
+  margin-left: 34px ;
+  border-radius: 10px;
+}
+
 }
