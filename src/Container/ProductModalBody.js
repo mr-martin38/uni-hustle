@@ -8,7 +8,7 @@ const ProductModalBody = () => {
         Home {">"} Sarah's Closet Store {">"} Sneakers{" "}
       </p>
       <div className="product-shoe">
-        <img className="product-shoe" src="/images/shoe.png" />
+        <img className="product-shoe" src="/images/shoe2.png" />
       </div>
       <div className="product-details">
         <h1>Nike Air Max 270 Series</h1>
