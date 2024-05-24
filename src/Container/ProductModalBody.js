@@ -34,7 +34,7 @@ const ProductModalBody = () => {
           Add to Cart
         </button>
         <button className="message-business" type="">
-          Message Business
+          Order Now
         </button>
       </div>
 
