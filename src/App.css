@@ -609,6 +609,11 @@ p {
   line-height: 19.36px;
 }
 
+.modal-body{
+  height: 4000px;
+  width: 600px;
+}
+
 /* @media screen and (max-width: 430px){
   .header > div:nth-child(1) > img{
     width: 30px;
@@ -682,7 +687,7 @@ margin-left: 500px;
   border: 5px solid yellow;
   margin-top: 270px;
   max-width: 450px;
-  display: inline-flex;
+  display: inline-flex; 
 }
 
 .product-card {

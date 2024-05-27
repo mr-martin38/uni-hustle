@@ -3,7 +3,7 @@ import { products } from "../Utlities/products";
 
 const ProductModalBody = () => {
   return (
-    <div>
+    <div className="modal-body">
       <p className="product-path">
         Home {">"} Sarah's Closet Store {">"} Sneakers{" "}
       </p>
