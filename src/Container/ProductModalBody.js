@@ -29,7 +29,7 @@ const ProductModalBody = () => {
         <img src="/images/star.png" className="star3" />
         <img src="/images/star.png" className="star3" /> <br />
         <br />
-        <p className="stock">5 left in stock</p>
+        <p className="stock">6 left in stock</p>
         <button className="submit" type="submit" value="Add to Cart">
           Add to Cart
         </button>
